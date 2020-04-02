@@ -13,4 +13,6 @@ def import_loaded_references(remove_namespace=True):
         loaded_reference.importContents()
         if namespace != ':' and remove_namespace:
             pm.namespace( removeNamespace=namespace, mergeNamespaceWithRoot=True )
+            
+    if pm.listReferences(loaded=True):
         import_objects_from_loaded_references()
