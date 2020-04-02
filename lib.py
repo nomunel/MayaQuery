@@ -15,4 +15,4 @@ def import_loaded_references(remove_namespace=True):
             pm.namespace( removeNamespace=namespace, mergeNamespaceWithRoot=True )
             
     if pm.listReferences(loaded=True):
-        import_objects_from_loaded_references()
+        import_loaded_references()
